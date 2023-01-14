@@ -87,7 +87,7 @@ class Dict {
     constructor() {
         this.words = {}
     }
-    add(word: Words) {
+    add(word: Word) {
         if(this.words[word.term] === undefined) {
             this.words[word.term] = word.def
         }
