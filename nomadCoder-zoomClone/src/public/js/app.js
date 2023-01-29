@@ -78,4 +78,3 @@ form.addEventListener("submit", handleRoomSubmit);
 socket.on("welcome", () => {
   addMessage("someone joined!");
 });
-// 챌린지 실팽..
