@@ -47,12 +47,12 @@
           const container = React.createElement("div", null, [h3, btn]);
         const container = React.createElement("div", null, [Title, Button]);
         */
-    const Container = (
+    const Container = () => (
       <div>
         <Title />
         <Button />
       </div>
     );
-    ReactDOM.render(Container, root);
+    ReactDOM.render(<Container />, root);
   </script>
 </html>
