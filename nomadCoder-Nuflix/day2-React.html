@@ -14,20 +14,20 @@
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="text/babel">
     const root = document.getElementById("root");
-    let counter = 0;
-    function countUp() {
-      counter += 1;
-      // 그러므로 여기서 한번 더 페이지를 렌더링 해주는 것이다.
-      ReactDOM.render(<Container />, root);
+
+    function App() {
+      const [counter, setCounter] = React.useState(0);
+      const onClick = () => {
+        setCounter(counter + 1);
+      };
+      return (
+        <div>
+          <h3>Total clicks: {counter}</h3>
+          <button onClick={onClick}>Click me</button>
+        </div>
+      );
     }
 
-    const Container = () => (
-      <div>
-        <h3>Total Clicks: {counter}</h3>
-        <button onClick={countUp}>Click me</button>
-      </div>
-    );
-    // 페이지를 띄웠을 때 처음 렌더링 되는 페이지이다.
-    ReactDOM.render(<Container />, root);
+    ReactDOM.render(<App />, root);
   </script>
 </html>
