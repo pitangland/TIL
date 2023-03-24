@@ -19,7 +19,6 @@
       const [counter, setCounter] = React.useState(0);
       const onClick = () => {
         //setCounter(counter + 1);
-        // 위의 식보다 안전하다.
         setCounter((current) => current + 1);
       };
       return (
