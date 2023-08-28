@@ -1,5 +1,3 @@
-// npm init -> npm install redux
-
 // redux만 설치된 프로젝트의 index.js 파일
 
 // 리덕스 모듈 가져오기
